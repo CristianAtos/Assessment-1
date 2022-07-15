@@ -31,7 +31,7 @@
 
             &:hover{
                 font-size: 18px;
-                color: rgba(43, 43, 200, 0.904);
+                color: $hover-color;
                 @include trasition-ease
             }
         }
@@ -39,18 +39,25 @@
 
     &-container{
         height: 100vh;
+        height: 100%;
+        margin-bottom: 160px;
     }
 
     &-photo{
-        width: 60%;
+        width: 40%;
         margin-left: auto;
         margin-right: auto;
         box-shadow: 2px 2px 8px gray;
-        &>img{
+        &img{
             object-fit: cover;
             display: block;
         }
+        
+        @media screen and (max-width: $small) {
+            width: 100%;
 
+        }
+        
         @media screen and (max-width: $medium) {
             width: 100%;
 
