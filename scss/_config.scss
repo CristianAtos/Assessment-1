@@ -1,5 +1,6 @@
 $primary-color: rgb(82, 82, 82);
 $accent-color: rgb(17, 129, 37);
+$hover-color: rgb(41, 75, 160);
 
 @function set-text-color($color){
     @if (lightness($color) > 40%) {
@@ -15,3 +16,5 @@ $accent-color: rgb(17, 129, 37);
 
 $small: 768px;
 $medium: 1024px;
+
+
