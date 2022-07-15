@@ -1,0 +1,75 @@
+.finance{
+    text-align: center;
+    justify-content: center;
+
+    &-title{
+        font-size: 0.75rem;
+        letter-spacing: 0.25rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+    &-subtitle{
+        font-size: 2.5rem;
+        margin-top: 2px;
+        margin-bottom: 1rem;
+    }
+
+    &-items{
+        margin-bottom: 2rem;
+    }
+    
+    &-item{
+        display: inline;
+        margin-left: 8px;
+        margin-right: 8px;
+        
+
+        a{
+            color: $primary-color;    
+
+            &:hover{
+                font-size: 18px;
+                color: rgba(43, 43, 200, 0.904);
+                @include trasition-ease
+            }
+        }
+    }
+
+    &-container{
+        height: 100vh;
+    }
+
+    &-photo{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 2px 2px 8px gray;
+        &>img{
+            object-fit: cover;
+            display: block;
+        }
+
+        @media screen and (max-width: $medium) {
+            width: 100%;
+
+        }
+    }
+}
+
+.rocket{
+    margin-top: 20px;
+    color: $accent-color;
+    font-size: 2.5rem;
+
+
+    &-hr{
+        margin-top: 2px;
+        margin-bottom: .25rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 269px;
+        border-top: 0.5px solid $accent-color;
+    }
+}

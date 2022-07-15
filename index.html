@@ -8,13 +8,16 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="/css/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
 
     <title>Responsive Landing Page</title>
 </head>
 
 <body>
-    <header>
 
+    <!--Nav bar-->
+    <header>
         <nav class="navbar">
             <img class="logo" src="/img/logo.png" alt="">
 
@@ -47,50 +50,111 @@
             <a href="#!" class="button is-link">Contact Us!</a>
         </nav>
     </header>
-
+    <!--End of navbar-->
+    <!--1st Section-->
     <section class="hero is-dark is-fullheight mb-0">
         <div class="hero-body" id="info">
-            <article class="">
-                <p class="title">
+            <figure class="hero-image">
+                <img src="/img/project-2.jpg" alt="">
+            </figure>
+            <article class="hero-text">
+                <h1 class="is-size-1 mb-4 hero-title">
                     <strong>Banking</strong> and <strong>Payroll</strong> for startups
-                </p>
-
-                <div class="navbar-menu">
-                    <a class="navbar-item">
-                        Bank account
-                    </a>
-    
-                    <a class="navbar-item">
-                        Bill payments
-                    </a>
-    
-                    <a class="navbar-item">
-                        Corporate cards
-                    </a>
-                    <a class="navbar-item">
-                        HR
-                    </a>
-                    <a class="navbar-item">
-                        Payroll
-                    </a>
-                </div>
+                </h1>
                 <!--Add buttons here-->
-                
+                <div>
+                    <ul class="action-bar">
+                        <li class="action-item"><a href="#!">Bank accounts</a></li>
+                        <li class="action-item"><a href="#!">Bill payments</a></li>
+                        <li class="action-item"><a href="#!">Corporate cards</a></li>
+                        <li class="action-item"><a href="#!">HR</a></li>
+                        <li class="action-item"><a href="#!">Payroll</a></li>
+                    </ul>
+                </div>
+                <!--Change subtitle-->
                 <p class="subtitle has-text-centered">
                     Setup all you finance and HR operations in under <strong>10 minutes.</strong>
                 </p>
+                <!--Hero button-->
                 <div>
                     <a href="#!" class="button is-large is-fullwidth is-link">Open account</a>
                 </div>
             </article>
-            <br><br>
-            <figure>
-                <img class="hero-image" src="/img/project-2.jpg" alt="">
-            </figure>
+            
 
         </div>
-
     </section>
+
+    <!--2nd Section-->
+    
+
+    <section class="finance-container">
+        <!--Header of section 2-->
+        <header class="finance">
+            <i class='bx bx-rocket rocket'></i>
+            <h2 class="finance-title">All-in-one finance and HR</h2>
+            <hr class="rocket-hr">
+            <h3 class="finance-subtitle">4-in-1 super-app to automate your startup's <strong>busywork</strong></h3>
+            <ul class="finance-items">
+                <li class="finance-item"><a href="#!">Bank accounts</a></li>
+                <i class='bx bx-plus' ></i>
+                <li class="finance-item"><a href="#!">Bill payments</a></li>
+                <i class='bx bx-plus' ></i>
+                <li class="finance-item"><a href="#!">Cards</a></li>
+                <i class='bx bx-plus' ></i>
+                <li class="finance-item"><a href="#!">Payroll and HR</a></li>
+
+            </ul>
+        </header>
+        <!--end of header-->
+        <!--Start of body-->
+            <figure class="finance-photo">
+                <img src="/img/project-6.jpg" alt="">
+            </figure>
+    </section>
+    <!--End of 2nd section-->
+
+    <!--3rd section-->
+    <section class="cloud">
+        <!--start header-->
+        <header>
+            <i class='bx bxs-bank bank'></i>
+            <h2 class="cloud-title">Finance cloud</h2>
+            <hr class="cloud-hr">
+            <h3 class="cloud-subtitle">Banking, supercharged with a <strong>4% APY</strong></h3>
+        </header>
+        <!--End header-->
+
+        <!--footer section-->
+
+        <footer>
+        <div class="card">
+            <div class="card-content">
+              <p class="title">
+                <i class='bx bx-money-withdraw' ></i>
+              </p>
+              <p class="subtitle">
+                FDIC- insumed bank accounts to protect your funds
+              </p>
+            </div>
+            <footer class="card-footer">
+              <p class="card-footer-item">
+                <span>
+                  View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
+                </span>
+              </p>
+              <p class="card-footer-item">
+                <span>
+                  Share on <a href="#">Facebook</a>
+                </span>
+              </p>
+            </footer>
+
+        </footer>
+    </section>
+
+
+
 
 
     <script src="/main.js"></script>

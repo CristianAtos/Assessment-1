@@ -1,4 +1,4 @@
-@import 'config', 'responsive', 'menu', 'responsive';
+@import 'config', 'responsive', 'menu', 'responsive', 'financeAndHr', 'cloud';
 
 .navbar {
     display: flex;
@@ -11,15 +11,23 @@
     &-menu {
         justify-content: center;
         align-items: center;
+        @media screen and (max-width: $medium) {
+            position:absolute;
+            background-color: $primary-color;
+            top: 4.4rem;
+            right: 0;
+        }
     }
 
 
     &-item {
-        margin: 14px;
+        padding: 1rem;
+        padding-right: 3rem;
         color: set-text-color($primary-color);
 
-        &:hover{
-            color: $primary-color;
+        &:hover,&:focus{
+            background-color: lighten($primary-color, 10%) !important;
+            color: white !important;
         }
 
         &-dropdown{
@@ -53,10 +61,35 @@
 }
 
 .hero-image {
-    display: flex;
-    width: 600px;
-    margin-left: 100px;
-    border-radius: 8px;
+        display: flex;
+        width: 50%;
+        border-radius: 8px;
+        @media screen and (max-width: $medium) {
+            width: 100%;
+        }
+    }
+
+.hero{
+    &-body{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        @media screen and (max-width: $medium) {
+            flex-direction: column;
+        }
+    }
+
+    &-text{
+        margin-right: 2rem;
+        @media screen and (max-width: $medium) {
+            margin-right: 0;
+        }
+    }
+
+    &-title{
+        text-align: center;
+    }
 }
 
 .title {
@@ -64,4 +97,22 @@
     width: 550px;
     margin-left: 100px;
     align-items: center;
+}
+
+.action{
+    &-item{
+        display: inline;
+        margin-right: 1rem;
+        &:hover{
+            color: rgb(41, 75, 160);
+            @include trasition-ease
+        }
+    }
+
+    &-bar{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+
 }
